@@ -1,30 +1,161 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Welcome</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">This page</h1>
-      <h2 class="project-tagline">Home</h2>
-    </section>
+<!-- saved from url=(0096)file:///C:/Users/PC/Desktop/%E7%A6%8F%E5%BB%BA%E7%A7%BB%E5%8A%A8%E4%BE%BF%E5%88%A9%E5%BA%97.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>福建移动便利店</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        p {
+            padding: 0;
+            margin: 0;
+        }
+        html, body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+        .page {
+            max-width: 480px;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            text-align: center;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            width: 100%;
+            position: relative;
+        }
+        .desc {
+            position: absolute;
+            top: 15%;
+            left: 0;
+            width: 100%;
+            margin: 0 auto;
+            color:#fff;
+        }
+        p {
+            font-size: 26px;
+        }
+        .strong {
+            font-weight: bolder;
+            font-size: 36px;
+            margin-top: 50px;
+        }
+        .title-img {
+            margin: 0 auto;
+            width: 100%;
+        }
+        .image-null {
+            height: 20%;
+        }
+        .btns {
+            width: 100%;
+            height: 100%;
+            padding: 38% 10% 4% 10%;
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            z-index: 9999;
+        }
+        .btn {
+            width: 33%;
+            height: 33%;
+        }
+        .success-img {
+            width: 30%;
+        }
+        .button {
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            width: 80%;
+        }
+        .button img {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .home {
+            position: fixed;
+            width: 60%;
+            bottom: 5%;
+            left:20%;
+        }
+        .home img {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        function goStore(type)
+        {
+            let url = ''
+            switch (type) {
+                case 'fz':
+                    url = 'https://wap.fj.10086.cn/store/wap?orgcode=V125001&smobile=13599966885#/'
+                break
+                case 'xm':
+                    url = 'https://wap.fj.10086.cn/store/wap?orgcode=V202003&smobile=14759204164#/'
+                break
+                case 'nd':
+                    url = 'https://wap.fj.10086.cn/store/wap?orgcode=V301999&smobile=13509558588#/'
+                break
+                case 'pt':
+                    url = 'https://wap.fj.10086.cn/store/wap?orgcode=4000000&smobile=13943000000#/'
+                break
+                case 'qz':
+                    url = 'https://wap.fj.10086.cn/store/wap?orgcode=V504002&smobile=13489825039#/'
+                break
+                case 'zz':
+                    url = 'https://wap.fj.10086.cn/store/wap?orgcode=6012583&smobile=15260131241#/'
+                break
+                case 'ly':
+                    url = 'https://wap.fj.10086.cn/store/wap?orgcode=V710001&smobile=18850802251#/'
+                break
+                case 'sm':
+                    url = 'https://wap.fj.10086.cn/store/wap?orgcode=V801004&smobile=13459889144#/'
+                break
+                case 'np':
+                    url = 'https://wap.fj.10086.cn/store/wap?orgcode=V900099&smobile=13559853913#/'
+                break
+            }
+            window.location.href = url
+        }
+    </script>
+</head>
+<body>
+<div id="app">
+    <div class="page">
+        <div class="header">
+            <div class="btns">
+                <div class="btn" onclick="goStore(&#39;fz&#39;)"></div>
+                <div class="btn" onclick="goStore(&#39;xm&#39;)"></div>
+                <div class="btn" onclick="goStore(&#39;nd&#39;)"></div>
+                <div class="btn" onclick="goStore(&#39;pt&#39;)"></div>
+                <div class="btn" onclick="goStore(&#39;qz&#39;)"></div>
+                <div class="btn" onclick="goStore(&#39;zz&#39;)"></div>
+                <div class="btn" onclick="goStore(&#39;ly&#39;)"></div>
+                <div class="btn" onclick="goStore(&#39;sm&#39;)"></div>
+                <div class="btn" onclick="goStore(&#39;np&#39;)"></div>
+            </div>
+            <img class="title-img" src="./福建移动便利店_files/store_operate_top_bg_2.png">
+            <!-- <div class="desc">
+                <img class="success-img" src="https://store2018.muapp.cn/images/c97baf962a14d0b2b84ca5e6f3e8b2b5.png">
+                <p class="strong">福建移动便利店</p>
+            </div> -->
+        </div>
+        <div class="home"><img src="./福建移动便利店_files/store_operater_logo_2.png"></div>
+    </div>
+</div>
 
-    <section class="main-content">
-      <p>测试发布页</p>
 
-      <footer class="site-footer">
-
-        <span class="site-footer-credits"> by <a href="https://www.github.com">github</a>.</span>
-      </footer>
-
-    </section>
-
-  
-  </body>
-</html>
+</body></html>
